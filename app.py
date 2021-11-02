@@ -24,4 +24,4 @@ def getWithUpvotes(subreddits, limit, upvotes):
     return jsonify(get.main(limit=limit, subs = subreddits, upvotes = upvotes))
 
 if __name__ == "__main__":
-    app.run(debug=config.debug)
+    app.run(debug=config.debug, port=80)
